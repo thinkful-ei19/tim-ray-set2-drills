@@ -16,3 +16,23 @@ function beyond(num) {
         console.log('Staying home');
     }
 }
+
+
+function decode(word) {
+    const message = [];
+    let code = word.split(" ");
+    for (let i = 0; i < code.length; i++) {
+        if (code[i][0] === 'a') {
+            message.push(code[i][1]);
+        } else if (code[i][0] === 'b') {
+            message.push(code[i][2]);
+        } else if (code[i][0] === 'c') {
+            message.push(code[i][3]); 
+        } else if (code[i][0] === 'd') {
+            message.push(code[i][4]); 
+        } else {
+            message.push(" ");
+        }
+    }
+    return message.join("");
+}
