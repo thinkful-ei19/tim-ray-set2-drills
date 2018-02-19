@@ -5,3 +5,14 @@ function jediName(firstName, lastName) {
 jediName('Beyonce', 'Knowles');
 
 
+function beyond(num) {
+    if (num === Infinity) {
+        console.log('And beyond');
+    } else if (isFinite(num) > 0 ) {
+        console.log('To infinity');
+    } else if (isFinite(num) === true && num < 0) {
+        console.log('To negative inifinity');
+    } else if (num === 0) {
+        console.log('Staying home');
+    }
+}
